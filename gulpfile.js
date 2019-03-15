@@ -117,6 +117,7 @@ function watch() {
     '_layouts/*',
     '_posts/*',
     '_work/*',
+    '_hobbies/*',
     'contact/*'
   ], gulp.series(jekyll, reload));
 }
