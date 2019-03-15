@@ -3,8 +3,8 @@ layout: post
 title: "Sketches"
 date: 2019-03-14
 description: 
-image: /assets/images/posts/sketches/flame.jpg
-link_image: /assets/images/posts/sketches/flame.jpg
+image: /assets/images/posts/sketches/car.jpg
+link_image: /assets/images/posts/sketches/car.jpg
 ---
 <p>It's essential to sketch for the projects i undertake and I also like to sketch casually</p>
 <p>Here are some of my sketches</p>
