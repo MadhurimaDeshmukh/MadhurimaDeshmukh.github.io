@@ -1,0 +1,33 @@
+---
+layout: post
+title: "Art"
+date: 2019-03-14
+description: 
+image: /assets/images/posts/art/saide_tar.jpg
+link_image: /assets/images/posts/art/saide_tar.jpg
+---
+<p>Here is some of my Art</p>
+
+<div class="browser">
+  
+      <div>
+      {% for image in site.static_files %}
+		{% if image.path contains 'images/posts/art' %}
+		    <span class="browser__dots"></span>
+			<figure class="browser__img">
+			 <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+			</figure>
+       
+		{% endif %}
+	  {% endfor %}
+          <!--{% if work.order == 0 or work.order == 2 or work.order == 4 %}
+
+            {% include work-card.html %}
+
+          {%endif %} -->
+      </div>
+<!--  <span class="browser__dots"></span>
+  <figure class="browser__img">
+    <img src="/assets/images/posts/roccia-wedding-1.jpg" alt="Roccia Wedding Website"/>
+  </figure> -->
+</div>
