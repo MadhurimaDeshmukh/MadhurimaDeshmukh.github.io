@@ -1,13 +1,13 @@
 # Site/SEO settings
-email: saide.koolivand2018@gmail.com
+email: mdeshmuk@c.ringling.edu
 permalink: /:year/:month/:title/
 google_analytics: UA-57782903-1
 
-name: Saide Koolivand Salouki
-title: Saide Koolivand Salouki
+name: Madhurima S. Deshmukh
+title: Madhurima S. Deshmukh
 description: >
-  My name is Saide Koolivand Salouki. I am an Industrial Designer and Idea developer
-url: http://saide-koolivand.github.io
+  My name is Madhurima S. Deshmukh. I am a Game Art Senior at Ringling
+url: https://madhurimadeshmukh.github.io/
 #twitter_username: 
 #default_img: http://thomasvaeth.com/assets/images/me.jpg
 
