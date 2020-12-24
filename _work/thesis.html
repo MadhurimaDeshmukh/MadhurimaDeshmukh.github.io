@@ -1,0 +1,77 @@
+---
+layout: work
+title:
+description: 
+image: /assets/images/work/Thesis/Thumbnail.jpg
+order: 5
+link_description: "Final year thesis 2020-21"
+link_image: /assets/images/work/Thesis/Thumbnail.jpg
+link_video: 
+---
+<!-- 
+<div class="study__intro section-padding--double bg-white">
+  <div class="grid-small">
+    <h2>
+      <span data-aos="slice-up" data-aos-duration="400">DOBE 3D Toy puzzle</span>
+    </h2>
+
+  </div>
+</div>
+
+<div class="section-padding bg-inrix--alpha">
+  <div class="grid">
+    <div class="browser" data-aos="fade-in">
+      <span class="browser__dots"></span>
+      <figure class="browser__img">
+        <img src="/assets/images/work/dobe-3d-toy/vision.jpg" alt="DOBE Vison"/>
+      </figure>
+    </div>
+  </div>
+</div>
+
+<div class="section-padding bg-inrix--alpha">
+  <div class="grid">
+    <div class="browser" data-aos="fade-in">
+      <span class="browser__dots"></span>
+      <figure class="browser__img">
+        <img src="/assets/images/work/dobe-3d-toy/all_toys.jpg" alt="DOBE all"/>
+      </figure>
+    </div>
+  </div>
+</div>
+
+<div class="section-padding bg-inrix--alpha">
+  <div class="grid">
+    <div class="browser" data-aos="fade-in">
+      <span class="browser__dots"></span>
+      <figure class="browser__img">
+        <img src="/assets/images/work/dobe-3d-toy/modular_ext.jpg" alt="DOBE modular"/>
+      </figure>
+    </div>
+  </div>
+</div>
+-->
+<p>Work in progress. Shots from my thesis</p>
+
+<div class="browser">
+  
+      <div>
+      {% for image in site.static_files %}
+		{% if image.path contains 'images/work/Thesis' %}
+               	<div class="grid">
+			<div class="browser" data-aos="fade-in">
+			<span class="browser__dots"></span>		    
+			<figure class="browser__img">
+			 <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+			</figure>
+			</div>
+		  </div>
+       
+		{% endif %}
+	  {% endfor %}
+          <!--{% if work.order == 0 or work.order == 2 or work.order == 4 %}
+
+            {% include work-card.html %}
+
+          {%endif %} -->
+      </div>
