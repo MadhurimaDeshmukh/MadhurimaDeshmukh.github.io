@@ -39,3 +39,6 @@ collections:
   work:
     output: true
     permalink: /:path/
+  internship:
+    output: true
+    permalink: /:path/
