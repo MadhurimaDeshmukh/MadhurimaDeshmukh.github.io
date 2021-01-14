@@ -7,6 +7,7 @@
     display: flex;
     flex-flow: wrap;
     flex-direction: row;
+    color: $color-white;
     margin: {
       top: 1em;
       right: -1em;
@@ -145,7 +146,7 @@
 
   &__title {
     overflow: hidden;
-
+    color: $color-white;
     span {
       display: inline-block;
     }
