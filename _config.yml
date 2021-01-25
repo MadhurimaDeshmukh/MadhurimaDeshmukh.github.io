@@ -42,3 +42,6 @@ collections:
   internship:
     output: true
     permalink: /:path/
+  hardsurface:
+    output: true
+    permalink: /:path/
