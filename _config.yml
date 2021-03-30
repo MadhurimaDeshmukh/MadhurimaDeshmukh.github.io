@@ -45,3 +45,6 @@ collections:
   hardsurface:
     output: true
     permalink: /:path/
+  digitalsculpting:
+    output: true
+    permalink: /:path/
