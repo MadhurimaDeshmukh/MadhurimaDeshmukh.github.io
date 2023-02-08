@@ -48,3 +48,6 @@ collections:
   digitalsculpting:
     output: true
     permalink: /:path/
+  krikey:
+    output: true
+    permalink: /:path/
