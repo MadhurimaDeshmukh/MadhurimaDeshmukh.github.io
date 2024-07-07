@@ -14,11 +14,41 @@ link_image: /assets/images/work/Thumbnails/name_Thumbnail.png
   </div>
 </section> -->
 
-<section id="projects" class="work section-padding bg-darkgrey">
+<section id="character" class="work section-padding--double bg-black">
   <div class="grid">
     <h2 class="work__title">
       <br>
-      <span data-aos="slice-up" data-aos-duration="400">Projects</span>
+      <span data-aos="slice-up" data-aos-duration="400">Character Art</span>
+    </h2>
+    <div class="work__container">
+      {% assign ordered_work = site.work | sort: 'order' %}
+      <div>
+        {% for work in ordered_work %}
+          {% if work.order == 0 or work.order == 2 or work.order == 4 %}
+
+            {% include work-card.html %}
+
+          {%endif %}
+        {% endfor %}
+      </div>
+      <div>
+        {% for work in ordered_work %}
+          {% if work.order == 1 or work.order == 3 or work.order == 5 %}
+
+            {% include work-card.html %}
+
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="environment" class="work section-padding bg-darkergrey">
+  <div class="grid">
+    <h2 class="work__title">
+      <br>
+      <span data-aos="slice-up" data-aos-duration="400">Environment/Props</span>
     </h2>
     <div class="work__container">
       {% assign ordered_work = site.work | sort: 'order' %}
@@ -97,8 +127,8 @@ link_image: /assets/images/work/Thumbnails/name_Thumbnail.png
 </section>
 -->
 
-<section class="cta bg-black">
+<!-- <section class="cta bg-black">
   <a class="cta__link" href="{{ '/contact' | prepend: site.baseurl }}">
     <span class="cta__text">Let’s talk</span>
   </a>
-</section>
+</section> -->

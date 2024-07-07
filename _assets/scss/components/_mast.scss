@@ -5,15 +5,17 @@
   @extend %flex-align;
   @extend %text-center;
 
-  min-height: 26em;
-  padding: 4em 1em;
+  min-height: 16em;
+  padding: 2em 1em;
+  color: $color-white;
+  align-items:flex-end;
 
   @media (min-width: $mq-small) {
-    padding: 6em 2em;
+    padding: 2em 2em;
   }
 
   @media (min-width: $mq-med) {
-    padding: 8em 4em;
+    padding: 2em 4em;
   }
 
   &--media {

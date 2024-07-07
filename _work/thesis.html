@@ -1,23 +1,22 @@
 ---
 layout: work
-title: ""
-description: 
-image: /assets/images/work/Thumbnails/Empyrean.png
+title: "Empyrean"
+description:
 order: 1
 link_description: "Final year thesis featured in 'Best of Ringing 2021'"
 link_image: /assets/images/work/Thumbnails/Empyrean.png
 link_video: 
 ---
 
-<div class="study__intro section-padding--double bg-darkgrey">
+<div class="study__intro section-padding bg-black">
   <div class="grid-small">
-<p data-aos="fade-in" data-aos-duration="400" data-aos-delay="100">
-  My environment and Character were featured in 'Best of Ringing 2021'.
-  This is my senior thesis game 'Empyrean' created 
-	in collaboration with Sarah Benyona.
-	Here are some progress shots and rendered assets. 
-	Responsible for Visual development, asset making using Maya, ZBrush and Substance Painter,
-	 and Level design and blueprinting in Unreal engine 4.</p>
+    <p data-aos="fade-in" data-aos-duration="400" data-aos-delay="100">
+      My environment and Character were featured in 'Best of Ringing 2021'.
+      This is my senior thesis game 'Empyrean' created 
+      in collaboration with Sarah Benyona.
+      Here are some progress shots and rendered assets. 
+      Responsible for Visual development, asset making using Maya, ZBrush and Substance Painter,
+      and Level design and blueprinting in Unreal engine 4.</p>
   </div>
 </div>
 
@@ -33,23 +32,24 @@ link_video:
 
 <div class="browser">
   
-      <div>
-      {% for image in site.static_files %}
-		{% if image.path contains 'images/work/Thesis' %}
-          <div class="grid">
-			<div class="browser" data-aos="fade-in">
-			<span class="browser__dots"></span>		    
-			<figure class="browser__img">
-			 <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-			</figure>
-			</div>
-		  </div>
+  <div>
+    {% for image in site.static_files %}
+		  {% if image.path contains 'images/work/Thesis' %}
+        <div class="grid">
+          <div class="browser" data-aos="fade-in">
+          <!-- <span class="browser__dots"></span>		     -->
+            <figure class="browser__img">
+              <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+            </figure>
+          </div>
+		    </div>
 
-		{% endif %}
+		  {% endif %}
 	  {% endfor %}
+  </div>
           <!--{% if work.order == 0 or work.order == 2 or work.order == 4 %}
 
             {% include work-card.html %}
 
           {%endif %} -->
-      </div>
+</div>
