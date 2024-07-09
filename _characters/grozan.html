@@ -1,0 +1,46 @@
+---
+layout: work
+title: Grozon
+order: 10
+link_description: "Original concept character"
+link_image: /assets/images/work/Digital_Sculpts/Grozan/1_Grozan_Coverpage.jpg
+link_video: 
+---
+<div class="study__intro section-padding bg-black">
+  <div class="grid-small">
+    <p>Created a Digital Sculpt of a monster with a lean stylized 
+muscular human like body and deformed monster head.
+Posed with a base and set props to give the feel of his environment.
+
+<br><b>Software used:</b> Zbrush and Photoshop.
+Created in 2021.</p>
+  </div>
+</div>
+
+<div class="section-padding bg-darkergrey">
+  <div class="grid">
+    <div class="browser">
+      <video autoplay loop muted>
+        <source type="video/mp4" src="/assets/images/work/Digital_Sculpts/Grozan/2_Grozan_Turntable.mp4">
+      </video>
+    </div>
+  </div>
+</div>
+
+<div class="browser">
+  <div>
+    {% for image in site.static_files %}
+		  {% if image.path contains 'images/work/Digital_Sculpts/Grozan/' %}
+        {% if image.path contains 'jpg' %}
+          <div class="grid">
+			      <div class="browser">
+			        <figure class="browser__img">
+			        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+			        </figure>
+			      </div>
+		      </div>
+        {% endif %}
+		  {% endif %}
+	  {% endfor %}
+  </div>
+</div>

@@ -18,13 +18,13 @@ link_image: /assets/images/work/Thumbnails/name_Thumbnail.png
   <div class="grid">
     <h2 class="work__title">
       <br>
-      <span data-aos="slice-up" data-aos-duration="400">Character Art</span>
+      <span>Character Art</span>
     </h2>
     <div class="work__container">
-      {% assign ordered_work = site.work | sort: 'order' %}
+      {% assign ordered_work = site.characters | sort: 'order' %}
       <div>
         {% for work in ordered_work %}
-          {% if work.order == 0 or work.order == 2 or work.order == 4 %}
+          {% if work.order == 0 or work.order == 2 or work.order == 4 or work.order == 6 or work.order == 8 or work.order == 10 %}
 
             {% include work-card.html %}
 
@@ -33,7 +33,7 @@ link_image: /assets/images/work/Thumbnails/name_Thumbnail.png
       </div>
       <div>
         {% for work in ordered_work %}
-          {% if work.order == 1 or work.order == 3 or work.order == 5 %}
+          {% if work.order == 1 or work.order == 3 or work.order == 5 or work.order == 7 or work.order == 9 %}
 
             {% include work-card.html %}
 
@@ -48,10 +48,10 @@ link_image: /assets/images/work/Thumbnails/name_Thumbnail.png
   <div class="grid">
     <h2 class="work__title">
       <br>
-      <span data-aos="slice-up" data-aos-duration="400">Environment/Props</span>
+      <span>Environment/Props</span>
     </h2>
     <div class="work__container">
-      {% assign ordered_work = site.work | sort: 'order' %}
+      {% assign ordered_work = site.environment | sort: 'order' %}
       <div>
         {% for work in ordered_work %}
           {% if work.order == 0 or work.order == 2 or work.order == 4 %}

@@ -1,0 +1,32 @@
+---
+layout: environment
+title: Krikey Props
+order: 1
+link_description: "Additional props and concepts I was responsible for at Krikey"
+link_image: /assets/images/work/Krikey/Miscellaneous/04_PlanetsConcept.jpg
+link_video: 
+---
+<div class="study__intro section-padding bg-black">
+  <div class="grid-small">
+    <p data-aos="fade-in" data-aos-duration="400" data-aos-delay="100">
+        Additional props and concepts I was responsible for at Krikey. 
+    </p>
+  </div>
+</div>
+
+<div class="browser">
+	<div>
+		{% for image in site.static_files %}
+			{% if image.path contains 'images/work/Krikey/Miscellaneous' %}
+				<div class="grid">
+					<div class="browser" data-aos="fade-in">
+						<figure class="browser__img">
+			 			<img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+						</figure>
+					</div>
+		  		</div>
+       
+			{% endif %}
+	  	{% endfor %}
+	</div>
+</div>

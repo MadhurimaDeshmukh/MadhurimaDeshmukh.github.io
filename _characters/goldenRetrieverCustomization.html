@@ -1,0 +1,33 @@
+---
+layout: work
+title: Golden Retriever Customizations
+order: 4
+link_description: "Published Web3 game"
+link_image: /assets/images/work/Krikey/GoldenRetriever_Customization/GoldenCustomization_01.jpg
+link_video: 
+---
+<div class="study__intro section-padding bg-black">
+  <div class="grid-small">
+    <p>
+        Solarpups is a Web3 game where players can digitally own dogs and interact with them. 
+        The second breed was the Golden Retriever. 
+        I was responsible for modeling and texturing the Golden Retriever's body, clothing, headwear, and fur patterns.
+    </p>
+  </div>
+</div>
+
+<div class="browser">
+  <div>
+    {% for image in site.static_files %}
+	  	{% if image.path contains 'images/work/Krikey/GoldenRetriever_Customization' %}
+        <div class="grid">
+		    	<div class="browser">
+			      <figure class="browser__img">
+			        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+			      </figure>
+			    </div>
+		    </div>
+		  {% endif %}
+	  {% endfor %}
+  </div>
+</div>

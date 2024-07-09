@@ -1,0 +1,37 @@
+---
+layout: work
+title: Rakha Sculpt
+order: 8
+link_description: "Original Concept, sculpted character for game 'Empyrean'"
+link_image: /assets/images/work/Digital_Sculpts/RakhaSculpt/Rakha-1.png
+link_video: 
+---
+<div class="study__intro section-padding bg-black">
+  <div class="grid-small">
+	<p>
+	Original Concept, sculpted using ZBrush. I was responsible for creating 
+	the character, Rakha in our game 'Empyrean'. 
+
+	<br>Set in a fantastic and mythical setting, Empyrean is a 3rd person shooter 
+	game where Rakha is an invader looking to steal the power from 'The Sun Kingdom'. 
+	Rakha's concept is inspired by Hindu and Buddhist cultures. I focused on creating a 
+	balance between his human-like body and his beast-like facial features.
+	<br><b>Software used:</b> ZBrush and Photoshop. Created in 2021.</p>
+  </div>
+</div>
+
+<div class="browser">
+    <div>
+        {% for image in site.static_files %}
+            {% if image.path contains 'images/work/Digital_Sculpts/RakhaSculpt' %}
+                <div class="grid">
+                    <div class="browser">   
+					    <figure class="browser__img">
+					    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+					    </figure>
+				    </div>
+		  	    </div>
+    		{% endif %}
+	    {% endfor %}
+    </div>
+</div>

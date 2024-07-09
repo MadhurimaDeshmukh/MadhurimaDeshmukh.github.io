@@ -39,7 +39,7 @@ layout: default
   </article>
 </div>
 
-{% assign ordered_work = site.characters | sort: 'order' %}
+{% assign ordered_work = site.environment | sort: 'order' %}
 {% if page.order == ordered_work.first.order %}
   {% assign previous_post = ordered_work.last %}
   {% assign next_post = ordered_work[1] %}

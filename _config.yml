@@ -36,18 +36,9 @@ paginate_path: '/page/:num/'
 
 # Collections
 collections:
-  work:
+  characters:
     output: true
     permalink: /:path/
-  internship:
-    output: true
-    permalink: /:path/
-  hardsurface:
-    output: true
-    permalink: /:path/
-  digitalsculpting:
-    output: true
-    permalink: /:path/
-  krikey:
+  environment:
     output: true
     permalink: /:path/
