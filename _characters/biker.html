@@ -1,0 +1,53 @@
+---
+layout: work
+title: Biker
+order: 0
+link_description: "Original concept character"
+link_image: /assets/images/work/Thumbnails/Biker_Thumbnail.jpg
+link_video: 
+---
+<div class="study__intro section-padding bg-black">
+  <div class="grid-small">
+    <p>Here's a personal project I worked on in my free time.  
+        I aimed to showcase my character-creation skills by delving into the ideation process, experimenting with new software and workflows, and guiding the outcome. This project was also an opportunity for me to conquer the challenges I had previously faced.
+        
+        For this project, my main focus was sculpting a semi-stylized character from scratch, creating hair textures using XGen, placing hair cards, figuring out a combination of using hand-painted and procedural techniques to make the skin textures, creating master material for the skin and hair, and finally, taking all of that and plugging it all in for creating high-quality renders inside of a game engine. This character uses the Metahuman eye shader. 
+        
+        Software used: 
+        Sculpted body in ZBrush 
+        Retopogized in Maya 
+        Hair Texture made using XGen in Maya 
+        Hair cards placed by hand in Maya
+        Skin and Clothes textured in Substance Painter 
+        Posed by Rigging model in Maya (Quick Rig) 
+        Made Master materials used for the character and Rendered in Unreal Engine 5</p>
+  </div>
+</div>
+
+<div class="section-padding bg-darkergrey">
+  <div class="grid">
+    <div class="browser">
+      <video autoplay loop muted>
+        <source type="video/mp4" src="/assets/images/work/Project_Biker/05_Biker_Turntable.mp4">
+      </video>
+    </div>
+  </div>
+</div>
+
+<div class="browser">
+  <div>
+    {% for image in site.static_files %}
+		  {% if image.path contains 'images/work/Project_Biker' %}
+        {% if image.path contains 'jpg' %}
+          <div class="grid">
+			      <div class="browser">
+			        <figure class="browser__img">
+			        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+			        </figure>
+			      </div>
+		      </div>
+        {% endif %}
+		  {% endif %}
+	  {% endfor %}
+  </div>
+</div>
