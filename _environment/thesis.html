@@ -1,0 +1,49 @@
+---
+layout: environment
+title: Empyrean
+order: 1
+link_description: "Final year thesis featured in 'Best of Ringing 2021'"
+link_image: /assets/images/work/Thumbnails/Empyrean_Thumbnail.jpg
+link_video: 
+---
+
+<div class="study__intro section-padding bg-black">
+  <div class="grid-small">
+    <p>
+      My environment and Character were featured in 'Best of Ringing 2021'.
+      This is my senior thesis game 'Empyrean' created 
+      in collaboration with Sarah Benyona.
+      Here are some progress shots and rendered assets. 
+      I was responsible for Visual development, asset making using Maya, ZBrush and Substance Painter,
+      and Level design and blueprinting in Unreal engine 4.</p>
+  </div>
+</div>
+
+<div class="section-padding bg-darkergrey">
+  <div class="grid">
+    <div class="browser">
+      <video autoplay loop muted>
+        <source type="video/mp4" src="/assets/images/work/Thesis/TempleScene.mp4">
+      </video>
+    </div>
+  </div>
+</div>
+
+<div class="browser">
+  <div>
+    {% for image in site.static_files %}
+		  {% if image.path contains 'images/work/Thesis' %}
+        {% if image.path contains 'mp4' %}
+        {% else %}
+        <div class="grid">
+          <div class="browser">
+            <figure class="browser__img">
+              <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+            </figure>
+          </div>
+		    </div>
+        {% endif %}
+		  {% endif %}
+	  {% endfor %}
+  </div>
+</div>

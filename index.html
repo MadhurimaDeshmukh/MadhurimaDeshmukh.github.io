@@ -14,14 +14,44 @@ link_image: /assets/images/work/Thumbnails/name_Thumbnail.png
   </div>
 </section> -->
 
-<section id="projects" class="work section-padding bg-darkgrey">
+<section id="character" class="work section-padding--double bg-black">
   <div class="grid">
     <h2 class="work__title">
       <br>
-      <span data-aos="slice-up" data-aos-duration="400">Projects</span>
+      <span>Character Art</span>
     </h2>
     <div class="work__container">
-      {% assign ordered_work = site.work | sort: 'order' %}
+      {% assign ordered_work = site.characters | sort: 'order' %}
+      <div>
+        {% for work in ordered_work %}
+          {% if work.order == 0 or work.order == 2 or work.order == 4 or work.order == 6 or work.order == 8 or work.order == 10 %}
+
+            {% include work-card.html %}
+
+          {%endif %}
+        {% endfor %}
+      </div>
+      <div>
+        {% for work in ordered_work %}
+          {% if work.order == 1 or work.order == 3 or work.order == 5 or work.order == 7 or work.order == 9 %}
+
+            {% include work-card.html %}
+
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="environment" class="work section-padding bg-darkergrey">
+  <div class="grid">
+    <h2 class="work__title">
+      <br>
+      <span>Environment/Props</span>
+    </h2>
+    <div class="work__container">
+      {% assign ordered_work = site.environment | sort: 'order' %}
       <div>
         {% for work in ordered_work %}
           {% if work.order == 0 or work.order == 2 or work.order == 4 %}
@@ -97,8 +127,8 @@ link_image: /assets/images/work/Thumbnails/name_Thumbnail.png
 </section>
 -->
 
-<section class="cta bg-black">
+<!-- <section class="cta bg-black">
   <a class="cta__link" href="{{ '/contact' | prepend: site.baseurl }}">
     <span class="cta__text">Let’s talk</span>
   </a>
-</section>
+</section> -->

@@ -1,0 +1,38 @@
+---
+layout: environment
+title: Internship
+order: 2
+link_description: "Pye Walkie-Phone Radio Transmitter/Receiver,c 1953"
+link_image: /assets/images/work/Thumbnails/Internship_Thumbnail.jpg
+link_video: 
+---
+
+<div class="study__intro section-padding bg-black">
+  <div class="grid">
+<p>
+    During the summer of 2020, I had the opportunity to work as a 3D art intern at CGO Studios. This experience was incredibly valuable and educational. As part of my responsibilities, I worked on creating 'Hero Assets' that would be used in the project called 'Everest', which is a VR experience designed for educational purposes. 
+    Part of the challenge was to make realistic models while keeping them low-poly. This was achieved by using Baked Normals. 
+    Below are some of the renders of the assets that I worked on.
+    <br><br>
+    Software Used: 
+    Model created in Maya,
+    Textured in Substance Painter
+</p>
+  </div>
+</div>
+
+<div class="browser">
+    <div>
+      {% for image in site.static_files %}
+		{% if image.path contains 'images/work/CGO_Internship/Radio' or image.path contains 'images/work/CGO_Internship/Tripods' %}
+            <div class="grid">
+    			<div class="browser">	    
+	    		<figure class="browser__img">
+		    	 <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+			    </figure>
+			    </div>
+		    </div>
+		{% endif %}
+	  {% endfor %}
+    </div>
+</div>

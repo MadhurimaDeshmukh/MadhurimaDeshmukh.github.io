@@ -1,0 +1,39 @@
+---
+layout: work
+title: Rakha
+order: 7
+link_description: "Final year thesis featured in 'Best of Ringing 2021'"
+link_image: /assets/images/work/Thumbnails/Rakha_Thumbnail.jpg
+link_video: 
+---
+<div class="study__intro section-padding bg-black">
+  <div class="grid">
+	<p>
+	My character Rakha was featured in 'Best of Ringing 2021' for our game Empyrean.
+	I was responsible for original concepts, modeling, retopology, texturing and rigging.
+
+	<br>Set in a fantastic and mythical setting, Empyrean is a 3rd person shooter 
+	game where Rakha is an invader looking to steal the power from 'The Sun Kingdom'. 
+	Rakha's concept is inspired by Hindu and Buddhist cultures.
+	I focused on creating a balance between his human-like body and his beast-like facial features.
+
+	<br>Software used: Zbrush, Maya, Substance Painter, Photoshop and Unreal engine 4.
+	Created in 2021.</p>
+  </div>
+</div>
+
+<div class="browser">
+	<div>
+		{% for image in site.static_files %}
+			{% if image.path contains 'images/work/Digital_Sculpts/RakhaTextured' %}
+				<div class="grid">
+					<div class="browser">
+						<figure class="browser__img">
+			 			<img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+						</figure>
+					</div>
+		  		</div>
+			{% endif %}
+	  	{% endfor %}
+	</div>
+</div>

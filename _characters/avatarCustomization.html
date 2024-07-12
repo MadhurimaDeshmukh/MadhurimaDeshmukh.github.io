@@ -1,0 +1,33 @@
+---
+layout: work
+title: Avatar Customizations
+order: 4
+link_description: "Published Augmented-Reality Game"
+link_image: /assets/images/work/Thumbnails/KrikeyAvatar_Thumbnail.jpg
+link_video: 
+---
+
+<div class="study__intro section-padding bg-black">
+  <div class="grid-small">
+    <p>
+        Krikey is an augmented-reality mobile app that consists of 'Krikees edit', a game in which the user is able to customize their character's outfit and record videos of the user interacting with their AR character. 
+        I was responsible for conceptualizing, modeling, optimizing, and texturing the clothing.
+    </p>
+  </div>
+</div>
+
+<div class="browser">
+	<div>
+      {% for image in site.static_files %}
+		{% if image.path contains 'images/work/Krikey/Avatar_Customization' %}
+			<div class="grid">
+				<div class="browser">
+					<figure class="browser__img">
+						<img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+					</figure>
+				</div>
+		  </div>
+		{% endif %}
+	  {% endfor %}
+	</div>
+</div>

@@ -8,6 +8,8 @@
   padding: 1em;
 
   font-family: $font-header;
+  background-color: $color-darkgrey;
+  color: $color-white;
 
   @media (min-width: $mq-small) {
     padding: 2em;
@@ -50,6 +52,6 @@
   }
 
   &__link {
-    @include link-underline(2px, $color-black);
+    @include link-underline(2px, $color-white);
   }
 }

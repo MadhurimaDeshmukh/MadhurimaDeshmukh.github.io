@@ -1,15 +1,9 @@
 {% if page.url == "/" %}
   <header class="header">
-    <a class="header__title" href="#" data-scroll>Madhurima Deshmukh | 3D Artist</a>
+    <a class="header__title" href="#" data-scroll>Madhurima Deshmukh | 3D Character Artist</a>
 
     <nav>
       <ul class="header__list">
-        <li>
-          <a class="header__link" href="#projects" data-scroll>Projects</a>
-        </li>
-        <!-- <li>
-          <a class="header__link" href="#articles" data-scroll>Articles</a>
-        </li>-->
         <li>
           <a class="header__link" href="{{ '/contact' | prepend: site.baseurl }}">Contact</a>
         </li>
@@ -17,11 +11,19 @@
           <a class="header__link" href="https://madhudigisculpts.tumblr.com/">Tumblr</a>
         </li>
       </ul>
+      <ul class="header__lowerlist">
+        <li>
+          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="character" data-scroll>Character Art</a>
+        </li>
+        <li>
+          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="environment" data-scroll>Environment/Props</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
   <header class="header--mobile">
-    <a class="header__title" href="#" data-scroll>Madhurima Deshmukh | 3D Artist</a>
+    <a class="header__title" href="#" data-scroll>Madhurima Deshmukh | 3D Character Artist</a>
 
     <div class="hamburger">
       <div></div>
@@ -31,32 +33,28 @@
     <nav class="header__nav">
       <ul class="header__list">
         <li>
-          <a class="header__link" href="#projects" data-scroll>Projects</a>
-        </li>
-        <!-- <li>
-          <a class="header__link" href="#articles" data-scroll>Articles</a>
-        </li>-->
-        <li>
           <a class="header__link" href="{{ '/contact' | prepend: site.baseurl }}">Contact</a>
         </li>
         <li>
           <a class="header__link" href="https://madhudigisculpts.tumblr.com/">Tumblr</a>
+        </li>
+      </ul>
+      <ul class="header__lowerlist">
+        <li>
+          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="character" data-scroll>Character Art</a>
+        </li>
+        <li>
+          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="environment" data-scroll>Environment/Props</a>
         </li>
       </ul>
     </nav>
   </header>
 {% elsif page.url == "/contact/" %}
   <header class="header">
-    <a class="header__title" href="{{ '/' | prepend: site.baseurl }}">Madhurima Deshmukh | 3D Artist</a>
+    <a class="header__title" href="{{ '/' | prepend: site.baseurl }}">Madhurima Deshmukh | 3D Character Artist</a>
 
     <nav>
       <ul class="header__list">
-        <li>
-          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="projects">Projects</a>
-        </li>
-        <!-- <li>
-          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="articles">Articles</a>
-        </li>-->
         <li>
           <a class="header__link" href="#" data-scroll>Contact</a>
         </li>
@@ -64,11 +62,19 @@
           <a class="header__link" href="https://madhudigisculpts.tumblr.com/" data-scroll>Tumblr</a>
         </li>
       </ul>
+      <ul class="header__lowerlist">
+        <li>
+          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="character" data-scroll>Character Art</a>
+        </li>
+        <li>
+          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="environment" data-scroll>Environment/Props</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
   <header class="header--mobile">
-    <a class="header__title" href="{{ '/' | prepend: site.baseurl }}">Madhurima Deshmukh | 3D Artist</a>
+    <a class="header__title" href="{{ '/' | prepend: site.baseurl }}">Madhurima Deshmukh | 3D Character Artist</a>
 
     <div class="hamburger">
       <div></div>
@@ -78,32 +84,28 @@
     <nav class="header__nav">
       <ul class="header__list">
         <li>
-          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="projects">Projects</a>
-        </li>
-        <!-- <li>
-          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="articles">Articles</a>
-        </li>-->
-        <li>
           <a class="header__link" href="#" data-scroll>Contact</a>
         </li>
         <li>
           <a class="header__link" href="https://madhudigisculpts.tumblr.com/" data-scroll>Tumblr</a>
+        </li>
+      </ul>
+      <ul class="header__lowerlist">
+        <li>
+          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="character" data-scroll>Character Art</a>
+        </li>
+        <li>
+          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="environment" data-scroll>Environment/Props</a>
         </li>
       </ul>
     </nav>
   </header>
 {% else %}
   <header class="header">
-    <a class="header__title" href="{{ '/' | prepend: site.baseurl }}">Madhurima Deshmukh | 3D Artist</a>
+    <a class="header__title" href="{{ '/' | prepend: site.baseurl }}">Madhurima Deshmukh | 3D Character Artist</a>
 
     <nav>
       <ul class="header__list">
-        <li>
-          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="projects">Projects</a>
-        </li>
-        <!-- <li>
-          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="articles">Articles</a>
-        </li>-->
         <li>
           <a class="header__link" href="{{ '/contact' | prepend: site.baseurl }}">Contact</a>
         </li>
@@ -111,11 +113,19 @@
           <a class="header__link" href="https://madhudigisculpts.tumblr.com/">Tumblr</a>
         </li>
       </ul>
+      <ul class="header__lowerlist">
+        <li>
+          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="character" data-scroll>Character Art</a>
+        </li>
+        <li>
+          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="environment" data-scroll>Environment/Props</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
   <header class="header--mobile">
-    <a class="header__title" href="{{ '/' | prepend: site.baseurl }}">Madhurima Deshmukh | 3D Artist</a>
+    <a class="header__title" href="{{ '/' | prepend: site.baseurl }}">Madhurima Deshmukh | 3D Character Artist</a>
 
     <div class="hamburger">
       <div></div>
@@ -125,16 +135,18 @@
     <nav class="header__nav">
       <ul class="header__list">
         <li>
-          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="projects">Projects</a>
-        </li>
-        <!-- <li>
-          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="articles">Articles</a>
-        </li>-->
-        <li>
           <a class="header__link" href="{{ '/contact' | prepend: site.baseurl }}">Contact</a>
         </li>
         <li>
           <a class="header__link" href="https://madhudigisculpts.tumblr.com/">Tumblr</a>
+        </li>
+      </ul>
+      <ul class="header__lowerlist">
+        <li>
+          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="character" data-scroll>Character Art</a>
+        </li>
+        <li>
+          <a class="header__link" href="{{ '/' | prepend: site.baseurl }}" data-anchor="environment" data-scroll>Environment/Props</a>
         </li>
       </ul>
     </nav>

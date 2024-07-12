@@ -26,11 +26,9 @@ layout: default
         </div>
       </section>
     {% else %}
-      <section class="mast bg-lightgrey rellax" data-rellax-speed="-4">
-        <div class="grid">
-          <div class="mast__container">
+      <section class="mast bg-black rellax" data-rellax-speed="-4">
+        <div class="grid-small">
             <h1 class="mast__title">{{ page.title }}</h1>
-          </div>
         </div>
       </section>
     {% endif %}
@@ -41,7 +39,7 @@ layout: default
   </article>
 </div>
 
-{% assign ordered_work = site.work | sort: 'order' %}
+{% assign ordered_work = site.characters | sort: 'order' %}
 {% if page.order == ordered_work.first.order %}
   {% assign previous_post = ordered_work.last %}
   {% assign next_post = ordered_work[1] %}

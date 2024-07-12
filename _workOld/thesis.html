@@ -1,0 +1,55 @@
+---
+layout: work
+title: "Empyrean"
+description:
+order: 1
+link_description: "Final year thesis featured in 'Best of Ringing 2021'"
+link_image: /assets/images/work/Thumbnails/Empyrean.png
+link_video: 
+---
+
+<div class="study__intro section-padding bg-black">
+  <div class="grid-small">
+    <p>
+      My environment and Character were featured in 'Best of Ringing 2021'.
+      This is my senior thesis game 'Empyrean' created 
+      in collaboration with Sarah Benyona.
+      Here are some progress shots and rendered assets. 
+      Responsible for Visual development, asset making using Maya, ZBrush and Substance Painter,
+      and Level design and blueprinting in Unreal engine 4.</p>
+  </div>
+</div>
+
+<!-- <div class="section-padding bg-lightgrey">
+    <div class="grid">
+      <div class="browser" data-aos="fade-in">
+        <video autoplay loop muted>
+          <source type="video/mp4" src="/assets/images/work/Thesis/01_sbenyona_mdeshmukh_trailer.mp4">
+        </video>
+      </div>
+    </div>
+</div> -->
+
+<div class="browser">
+  
+  <div>
+    {% for image in site.static_files %}
+		  {% if image.path contains 'images/work/Thesis' %}
+        <div class="grid">
+          <div class="browser">
+          <!-- <span class="browser__dots"></span>		     -->
+            <figure class="browser__img">
+              <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+            </figure>
+          </div>
+		    </div>
+
+		  {% endif %}
+	  {% endfor %}
+  </div>
+          <!--{% if work.order == 0 or work.order == 2 or work.order == 4 %}
+
+            {% include work-card.html %}
+
+          {%endif %} -->
+</div>

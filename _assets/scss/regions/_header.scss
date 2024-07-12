@@ -3,17 +3,17 @@
 //--------------------------------------------
 .header {
   position: absolute;
-  top: 1em;
+  top: 0;
   left: 0;
   right: 0;
   z-index: $z-998;
+  background-color: $color-darkgrey;
+  color: $color-white;
 
   display: none;
-  padding: 1em;
+  padding: 2em;
 
   @media (min-width: $mq-small) {
-    top: 2em;
-
     display: flex;
     justify-content: space-between;
     padding: {
@@ -23,9 +23,8 @@
   }
 
   @media (min-width: $mq-med) {
-    top: 3em;
-    left: 1em;
-    right: 1em;
+    left: 0em;
+    right: 0em;
 
     padding: {
       right: 3em;
@@ -36,9 +35,9 @@
   .js-scrolling-up &,
   .js-scrolling-down & {
     position: fixed;
-    top: 1em;
+    top: 0em;
 
-    background-color: $color-darkergrey;
+    background-color: $color-darkgrey;
     color: $color-white;
     box-shadow: 0px 1px 0px 1px rgba($color-black, 0.02), 0px 4px 16px rgba($color-black, 0.09);
   }
@@ -56,7 +55,7 @@
     font-family: $font-header;
     font-weight: 400;
     font-size: 1.1em;
-    color: $color-black;
+    color: $color-white;
 
     .cryptologg &,
     .s-p-real-estate &,
@@ -70,7 +69,7 @@
 
     .js-scrolling-up &,
     .js-scrolling-down & {
-      color: $color-black;
+      color: $color-white;
     }
   }
 
@@ -91,10 +90,22 @@
     }
   }
 
+  &__lowerlist {
+    @extend %no-list-style;
+
+    display: flex;
+    position: absolute;
+    left: 40%;
+
+    & > li:not(:last-child) {
+      margin-right: 1.25em;
+    }
+  }
+
   &__link {
     position: relative;
 
-    color: $color-black;
+    color: $color-white;
     transition: all 400ms ease;
 
     &:before {
@@ -106,7 +117,7 @@
       height: 2px;
       width: 0;
       
-      background-color: $color-black;
+      background-color: $color-darkgrey;
       transition: all 400ms ease;
 
       .cryptologg &,
@@ -118,7 +129,7 @@
 
       .js-scrolling-up &,
       .js-scrolling-down & {
-        background-color: $color-black;
+        background-color: $color-darkgrey;
       }
     }
 
@@ -129,7 +140,7 @@
 
         width: 100%;
         
-        background-color: $color-black;
+        background-color: $color-white;
 
         .cryptologg &,
         .s-p-real-estate &,
@@ -140,7 +151,7 @@
 
         .js-scrolling-up &,
         .js-scrolling-down & {
-          background-color: $color-black;
+          background-color: $color-white;
         }
       }
     }
@@ -164,7 +175,7 @@
     justify-content: space-between;
     padding: 1em;
 
-    background-color: $color-white;
+    background-color: $color-darkgrey;
     box-shadow: 0px 1px 0px 1px rgba($color-black, 0.02), 0px 4px 16px rgba($color-black, 0.09);
 
     @media (min-width: $mq-small) {
@@ -180,7 +191,7 @@
     width: 100%;
     padding: 1em;
 
-    background-color: $color-white;
+    background-color: $color-darkgrey;
     visibility: hidden;
     opacity: 0;
 
@@ -237,7 +248,7 @@
     width: 26px;
     margin-left: auto;
 
-    background-color: $color-black;
+    background-color: $color-white;
     transition: all 200ms ease-in-out;
 
     &:nth-of-type(2) {
@@ -252,7 +263,7 @@
   .js-hamburger & {
 
     & > div {
-      background-color: $color-black;
+      background-color: $color-white;
 
       &:nth-of-type(1) {
         transform: translateY(6px) rotate(45deg);
