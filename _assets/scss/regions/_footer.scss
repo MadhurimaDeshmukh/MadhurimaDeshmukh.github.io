@@ -19,18 +19,18 @@
     padding: 3em 4em;
   }
 
-  .contact & {
+  // .contact & {
 
-    @media (min-width: $mq-med) {
-      position: absolute;
-      left: 4em;
-      bottom: 3em;
-      right: 4em;
-      z-index: $z-1;
+  //   @media (min-width: $mq-med) {
+  //     position: absolute;
+  //     left: 4em;
+  //     bottom: 3em;
+  //     right: 4em;
+  //     z-index: $z-1;
 
-      padding: 0;
-    }
-  }
+  //     padding: 0;
+  //   }
+  // }
 
   &__list {
     @extend %no-list-style;
