@@ -51,7 +51,7 @@
   &__link {
     @include link-underline(1px, $color-grey);
 
-    color: $color-black;
+    color: $color-white;
     white-space: nowrap;
     transition: color 400ms ease-in-out;
 
