@@ -33,8 +33,30 @@ link_video:
   <div>
     {% for image in site.static_files %}
 		  {% if image.path contains 'images/work/Thesis' %}
-        {% if image.path contains 'mp4' %}
-        {% else %}
+        {% if image.path contains 'png' %}
+        <div class="grid">
+          <div class="browser">
+            <figure class="browser__img">
+              <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+            </figure>
+          </div>
+		    </div>
+        {% endif %}
+		  {% endif %}
+	  {% endfor %}
+  </div>
+</div>
+
+<div class="browser">
+  <div class="grid">
+    <h2 class="work__subtitle">
+      GIFs below<br>
+    </h2>
+  </div>  
+  <div>
+    {% for image in site.static_files %}
+		  {% if image.path contains 'images/work/Thesis' %}
+        {% if image.path contains 'gif' %}
         <div class="grid">
           <div class="browser">
             <figure class="browser__img">
